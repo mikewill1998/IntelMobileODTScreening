@@ -10,8 +10,8 @@ for file in os.listdir(folder):
     f_img = folder + file
     try:
         img = Image.open(f_img)
-        # img = ttf.center_crop(img, output_size=(1000, 1000))
-        img = img.resize((250, 250))
+        img = ttf.center_crop(img, output_size=(2500, 2500))
+        img = img.resize((28, 28))
     except:
         continue
     
